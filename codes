@@ -1,0 +1,58 @@
+// 1)
+
+var MyObject={ name:"Dima", age:"34",hair:"Brown"};
+
+
+
+
+// 2)
+
+function theNameOfTheObject(MyObject){
+	return MyObject.name;
+}
+
+
+
+// 3)
+
+var myArray = [1,2,3,4,5];
+
+
+
+
+// 4)
+
+var myArray = [1,2,3,4,5];
+function loopFunction(array){
+
+	var i,len,text;
+       
+	len=array.length;
+
+	text="<ul>";
+		for(i=0;i<len;i++){
+			text +="<li>"+array[i]+"</li>";
+		}
+	text +="</ul>";
+
+	return text;
+}
+
+
+
+// 5)
+
+var i,text;
+text="<ul>"
+for(i=1;i<=100;i++){
+	if(i%5==0 && i%3==0){
+		text+="<li>"+"FizzBuzz"+"</li>"
+	}else if(i%5==0){
+		text+="<li>"+"Buzz"+"</li>"
+	}else if( i%3==0){
+		text+="<li>"+"Fizz"+"</li>";
+	}else{
+		text+="<li>"+i+"</li>";
+	}
+}
+text+="</ul>"
